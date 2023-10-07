@@ -16,7 +16,7 @@ REST API usando Node.js, el framework web Express y el sistema gestor de bases d
 ## Instalación
 Instala las dependencias necesarias de Nodejs. (Indicados en package.json)
 	
-	### `npm install`
+	npm install
 
 <hr/>
 
@@ -24,8 +24,8 @@ Instala las dependencias necesarias de Nodejs. (Indicados en package.json)
 Estos son los comandos que se utilizaron para instalar las dependencias mencionadas anteriormente, pero solo son ejemplos si se desea crear el proyecto desde cero. 
 Ya que para evitar eso solo se ejecuta el comando anterior mencionado anteriormente que instala todas las dependencias.
 
-	## `npm i dotenv express promise-mysql`
-	## `npm i @babel/cli @babel/core @babel/node @babel/preset-env morgan nodemon -D`
+	npm i dotenv express promise-mysql
+	npm i @babel/cli @babel/core @babel/node @babel/preset-env morgan nodemon -D
 
 <hr/>
 
@@ -33,7 +33,7 @@ Ya que para evitar eso solo se ejecuta el comando anterior mencionado anteriorme
 Ejecuta la aplicación en modo de desarrollo.\
 Abra [http://localhost:5000](http://localhost:5000) para verlo en su navegador.
 	
-	### `npm run dev`
+	npm run dev
 
 La página se recargará cuando realice cambios.
 
@@ -41,7 +41,7 @@ La página se recargará cuando realice cambios.
 
 ## Crear y asignar variables de entorno en un archivo .env (En la raíz del proyecto)
 
-	### `HOST=host`
-	### `DATABASE=database`
-	### `USER=user`
-	### `PASSWORD=password`
+	HOST=host
+	DATABASE=database
+	USER=user
+	PASSWORD=password
