@@ -1,5 +1,5 @@
 # Proyecto Final Renta Autos - API REST NodeJs y MySQL 
-REST API usando Node.js, el framework web Express y el sistema gestor de bases de datos MySQL, con los métodos HTTP GET, POST, PUT y DELETE;
+REST API usando Node.js, el framework web Express y el sistema gestor de bases de datos MySQL, con los métodos HTTP GET, POST, PUT y DELETE.
 
 <hr/>
 
