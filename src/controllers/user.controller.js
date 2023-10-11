@@ -92,7 +92,7 @@ const updateUser = async (req, res) => {
                 password = MD5('${password}'), 
                 active = ${active}
             WHERE id_user = ?`, id);
-        const response = (result.affectedRows > 0) ? { status: 200, success: true, message: "User Updated" } : { status: 400, success: false, message: "User was not updated" } ;
+        const response = (result.affectedRows > 0) ? { status: 200, success: true, message: "User Updated" } : { status: 400, success: false, message: "User was not updated" };
         res.json(response);
     } catch (error) {
         res.status(500);

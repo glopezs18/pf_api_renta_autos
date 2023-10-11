@@ -56,7 +56,8 @@ const updateRol = async (req, res) => {
         const rol = { name, description };
         const connection = await getConnection();
         const result = await connection.query("UPDATE pf_rol SET ? WHERE id_rol = ?", [rol, id]);
-        res.json({status: 200, success: true, response: result});
+        const response = (result.affectedRows > 0) ? { status: 200, success: true, message: "Rol Updated" } : { status: 400, success: false, message: "Rol was not updated" };
+        res.json(response);
     } catch (error) {
         res.status(500);
         res.json({ status: 500, success: false, message: error.message });
