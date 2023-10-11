@@ -1,5 +1,6 @@
 import express from "express";
 import morgan from "morgan";
+const cors = require('cors');
 // Routes
 import rolRoutes from "./routes/rol.routes";
 import clientRoutes from "./routes/client.routes";
@@ -17,6 +18,7 @@ app.set("port", 5000);
 // Middlewares
 app.use(morgan("dev"));
 app.use(express.json());
+app.use(cors());
 
 // Routes
 app.use("/api/project/pf_rol", rolRoutes);
