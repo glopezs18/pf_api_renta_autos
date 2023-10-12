@@ -10,6 +10,7 @@ REST API usando Node.js, el framework web Express y el sistema gestor de bases d
 - babel: Compilador de javascript (Convierte código de javascript a código general para que los navegadores lo soporten) 
 - morgan: Ver en consola peticiones que se realizan
 - nodemon: para reflejar cambios automáticamente con cada cambio que realicemos en la api
+- cors: Permite el uso compartido de recursos entre orígenes
 
 <hr/>
 
