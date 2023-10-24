@@ -113,7 +113,9 @@ const createInvoice = async (req, res) => {
 
         const total_to_pay = (total_invoice * taxes) + total_invoice;
 
-        // const rent_data = { id_client, id_vehicle, rental_init_date, rental_end_date, init_milieage, rental_fee, total_rate };
+        // const rent_data = { id_rent, payment_method, total_invoice, rental_details, taxes, total_to_pay };
+        // console.log("total_to_pay",total_to_pay);
+        // res.json(rent_data)
         const connection = await getConnection();
         const response = await connection.query(`INSERT INTO pf_billing(id_rent, payment_method, total_invoice, rental_details, taxes, total_to_pay) VALUES(${id_rent}, ${payment_method}, '${total_invoice}', '${rental_details}', ${taxes}, ${total_to_pay})`);
         const result = (response.affectedRows > 0) ? true : false;

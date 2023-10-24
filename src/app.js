@@ -13,7 +13,7 @@ import dashboardRoutes from "./routes/dashboard.routes";
 const app = express();
 
 // Settings
-app.set("port", 5000);
+app.set("port", 4000);
 
 // Middlewares
 app.use(morgan("dev"));
